@@ -19,7 +19,7 @@ function App() {
     },
     {
       path: "/use",
-      element: <div>use play page</div>
+      element: 
     }, 
     {
       path: "/stats",
