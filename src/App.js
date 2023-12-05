@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import {useState, useEffect} from 'react'
 import Useplay from './Useplay';
+import Playlist from './Playlist'
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
     },
     {
       path: "/use",
-      element: <Useplay/>
+      element: <Useplay/>,
+      element: <Playlist/>
+
     }, 
     {
       path: "/stats",
