@@ -25,15 +25,15 @@ function App() {
       
       element: <Useplay/>
       }, 
-      {
-        path: "/use",
-
-        element: <Playlist/>
-      },
-      {
-        path: "/use",
-        element: <Playcard/>
-      },
+     // {
+      //  path: "/use",
+//
+       // element: <Playlist/>
+    //  },
+     // {
+      //  path: "/use",
+      //  element: <Playcard/>
+     // },
     {
       path: "/stats",
       element: <div>stats page</div>

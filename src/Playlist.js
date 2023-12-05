@@ -11,7 +11,10 @@ function Playlist({plays})
     })
     
     return (
-        <div>{mappedPlays}</div>
+        <div>{mappedPlays}
+        <p>playlists works</p>
+        </div>
+        
     )
 }
 export default Playlist;
