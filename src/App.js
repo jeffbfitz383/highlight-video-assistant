@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import {useState, useEffect} from 'react'
+import Useplay from './Useplay';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     },
     {
       path: "/use",
-      element: 
+      element: <Useplay/>
     }, 
     {
       path: "/stats",
