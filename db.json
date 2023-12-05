@@ -2,16 +2,40 @@
     "plays": [
         {
             "id": 1,
-            "player":14
+            "level": "varsity",
+            "game": "Monarch",
+            "quarter": 1,
+            "start": "8:40",
+            "stop": "8:33",
+            "player":14,
+            "playtype": "layup",
+            "quality": "7.5",
+            "assist":  12
             
         },
         {
             "id": 2,
-            "player":15
+            "level": "JV",
+            "game": "Legacy",
+            "quarter": 3,
+            "start": "11:23",
+            "stop": "11:11",
+            "player":5,
+            "playtype": "put back",
+            "quality": "6.8",
+            "assist":  11
         },
         {
             "id": 3,
-            "player":13
+            "level": "C team",
+            "game": "Horizon",
+            "quarter": 4,
+            "start": "5:05",
+            "stop": "5:00",
+            "player":3,
+            "playtype": "TP",
+            "quality": "9.0",
+            "assist":  12
         }
     ]
 }
