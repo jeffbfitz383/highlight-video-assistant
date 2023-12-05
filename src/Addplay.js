@@ -1,6 +1,9 @@
 import React from "react";
 
-function Addplay()
+function AddPlay()
+
+
+
 {
     function submit(e){
         e.preventDefault()
@@ -13,10 +16,11 @@ function Addplay()
             player: e.target.player.value,
             playtype: e.target.playtype.value,
             quality: e.target.quality.value,
-            assist: e.target.assist.value,
+            assist: e.target.assist.value
 
 
         }
+        
         console.log(newPlay)
 
     }
@@ -51,4 +55,4 @@ function Addplay()
         
     
 
-export default Addplay;
+export default AddPlay;

@@ -8,7 +8,7 @@ import {useState, useEffect} from 'react'
 import Useplay from './Useplay';
 import Playlist from './Playlist';
 import Playcard from './Playcard';
-import Addplay from './Addplay';
+import AddPlay from './Addplay';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     },
     {
       path: "/add",
-      element: <Addplay/>
+      element: <AddPlay/>
     },
     {
       path: "/use",
