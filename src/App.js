@@ -8,6 +8,7 @@ import {useState, useEffect} from 'react'
 import Useplay from './Useplay';
 import Playlist from './Playlist';
 import Playcard from './Playcard';
+import Addplay from './Addplay';
 
 
 function App() {
@@ -18,26 +19,18 @@ function App() {
     },
     {
       path: "/add",
-      element: <div>add play screen</div>
+      element: <Addplay/>
     },
     {
       path: "/use",
       
       element: <Useplay/>
       }, 
-     // {
-      //  path: "/use",
-//
-       // element: <Playlist/>
-    //  },
-     // {
-      //  path: "/use",
-      //  element: <Playcard/>
-     // },
-    {
+ {
       path: "/stats",
       element: <div>stats page</div>
     }
+   
   ]);
   return (
     <>
