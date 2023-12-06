@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import Playlist from "./Playlist"
+import AddPlay from "./Addplay"
 
 function Useplay(){
 
@@ -13,15 +14,18 @@ function Useplay(){
         .then(data=>setPlays(data))
         
       },[])
-      //console.log(plays)
       
-     
+      function postPlay(newPlay){
+        setPlays([...plays,newPlay])
+      }
+      
+     console.log(plays)
 
 
     return(
-        <div>useplay function renders
+        <div>
+            <AddPlay postPlay={postPlay}/>
             <Playlist plays ={plays}/>
-            
         </div>
 
     )

@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddPlay()
+function AddPlay({postPlay})
 
 
 
@@ -20,7 +20,7 @@ function AddPlay()
 
 
         }
-        
+        postPlay(newPlay)
         console.log(newPlay)
 
     }
