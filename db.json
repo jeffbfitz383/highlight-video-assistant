@@ -95,6 +95,18 @@
       "quality": "",
       "assist": "",
       "id": 8
+    },
+    {
+      "level": "testing",
+      "game": "",
+      "quarter": "",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 9
     }
   ],
   "players": [
@@ -105,16 +117,33 @@
       "assists": 5
     },
     {
-      "id": 1,
+      "id": 2,
       "jersey": 14,
       "featured": 6,
       "assists": 7
     },
     {
-      "id": 1,
+      "id": 3,
       "jersey": 15,
       "featured": 7,
       "assists": 9
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "school": "Monarch",
+      "timesused": 2
+    },
+    {
+      "id": 2,
+      "school": "Legacy",
+      "timesused": 4
+    },
+    {
+      "id": 3,
+      "school": "Horizon",
+      "timesused": 8
     }
   ]
 }
