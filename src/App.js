@@ -13,6 +13,7 @@ import Useplay from './Useplay';
 import Playlist from './Playlist';
 import Playcard from './Playcard';
 import AddPlay from './Addplay';
+import Useplayer from './Useplayer'
 
 
 
@@ -22,6 +23,8 @@ function App() {
 
   //from useplays
 const [plays,setPlays] = useState([]) 
+const [players,setPlayers] =useState([])
+
     
 useEffect(()=>{
     fetch('http://localhost:3001/plays')
@@ -29,6 +32,15 @@ useEffect(()=>{
     .then(data=>setPlays(data))
     
   },[])
+
+  useEffect(()=>{
+    fetch('http://localhost:3001/players')
+    .then(r=>r.json())
+    .then(data=>setPlayers(data))
+    
+  },[])
+
+  console.log(players)
   
   function postPlay(newPlay){
     fetch('http://localhost:3001/plays',{
@@ -91,7 +103,7 @@ return (
         <Route path="/" element={<div>Hello world!</div>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
         <Route path="/use" element={<Useplay plays ={plays}/>}/>
-        <Route path="/stats" element={<div>stats page</div>}/>
+        <Route path="/stats" element={<Useplayer/>}/>
 
       </Routes>
     </BrowserRouter>
