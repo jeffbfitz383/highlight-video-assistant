@@ -11,7 +11,45 @@ import Playcard from './Playcard';
 import AddPlay from './Addplay';
 
 
+
 function App() {
+
+
+
+  //from useplays
+const [plays,setPlays] = useState([]) 
+    
+useEffect(()=>{
+    fetch('http://localhost:3001/plays')
+    .then(r=>r.json())
+    .then(data=>setPlays(data))
+    
+  },[])
+  
+  function postPlay(newPlay){
+    fetch('http://localhost:3001/plays',{
+      method:"POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newPlay)
+
+    })
+    .then(r=>r.json())
+    .then(data=>setPlays([...plays,data]))
+    
+    
+    //setPlays([...plays,newPlay])
+  }
+  console.log("Hello")
+  console.log(plays)
+
+  
+ ///console.log(plays)
+////
+
+
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -19,12 +57,13 @@ function App() {
     },
     {
       path: "/add",
-      element: <AddPlay/>
+      element: <AddPlay postPlay={postPlay}/>,    //////from use play/////
+      
     },
     {
       path: "/use",
       
-      element: <Useplay/>
+      element: <Useplay plays ={plays}/>
       }, 
  {
       path: "/stats",
