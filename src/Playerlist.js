@@ -3,12 +3,21 @@ import Useplayer from "./Useplayer"
 import Playercard from "./Playercard";
 
 
-function Playerlist()
+function Playerlist({players})
+
 {
-   
+    console.log("Hey there")
+    console.log(players)
+
+
+    const mappedPlayers = players.map((player)=>{
+        return <Playercard key={players.id} player={player}/>
+
+    })
+    
     
     return (
-        <Playercard/>
+       <div>{mappedPlayers}</div>
     )
 }
 export default Playerlist;

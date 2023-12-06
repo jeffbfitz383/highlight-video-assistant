@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react'
 import Playerlist from "./Playerlist"
 
-function Useplayer(){
+function Useplayer({players}){
 
-
+console.log(players)
 
 
    
@@ -12,7 +12,7 @@ function Useplayer(){
     return(
         <div>
           
-          <Playerlist/>
+          <Playerlist players={players}/>
         </div>
 
     )

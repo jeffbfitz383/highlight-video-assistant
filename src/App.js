@@ -103,7 +103,7 @@ return (
         <Route path="/" element={<div>Hello world!</div>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
         <Route path="/use" element={<Useplay plays ={plays}/>}/>
-        <Route path="/stats" element={<Useplayer/>}/>
+        <Route path="/stats" element={<Useplayer players ={players}/>}/>
 
       </Routes>
     </BrowserRouter>

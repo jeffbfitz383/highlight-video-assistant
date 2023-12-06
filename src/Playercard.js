@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-function Playercard(){
+function Playercard({player}){
  
 
     return(
@@ -9,6 +9,12 @@ function Playercard(){
         <div>
         
         <p>Plyer card works</p>
+        <p>{player.id}</p>
+        <p>{player.jersey}</p>
+        <p>{player.featured}</p>
+        <p>{player.assists}</p>
+        
+
         </div>
     )
 }
