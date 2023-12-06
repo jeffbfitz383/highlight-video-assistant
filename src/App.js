@@ -3,7 +3,11 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
+  Routes,
+  Route,
+  BrowserRouter
 } from "react-router-dom"
+import NavBar from './NavBar'
 import {useState, useEffect} from 'react'
 import Useplay from './Useplay';
 import Playlist from './Playlist';
@@ -50,33 +54,48 @@ useEffect(()=>{
 
 
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <div>Hello world!</div>,
-    },
-    {
-      path: "/add",
-      element: <AddPlay postPlay={postPlay}/>,    //////from use play/////
+ // const router = createBrowserRouter([
+   // {
+    //  path: "/",
+    //  element: <div>Hello world!</div>,
+    //},
+   // {
+    //  path: "/add",
+     // element: <AddPlay postPlay={postPlay}/>,    //////from use play/////
       
-    },
-    {
-      path: "/use",
+   // },
+   // {
+    //  path: "/use",
       
-      element: <Useplay plays ={plays}/>
-      }, 
- {
-      path: "/stats",
-      element: <div>stats page</div>
-    }
+    //  element: <Useplay plays ={plays}/>
+     // }, 
+ //{
+    //  path: "/stats",
+     // element: <div>stats page</div>
+   // }
    
-  ]);
-  return (
-    <>
-      <div>Header</div>
-      <RouterProvider router={router} />
-    </>
-  );
+ // ]);
+ //return (
+  //  <>
+     // <div>Header</div>
+    //  <RouterProvider router={router} />
+  ///  </>
+//  );
+//}
+
+
+return (
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<div>Hello world!</div>}/>
+        <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
+        <Route path="/use" element={<Useplay plays ={plays}/>}/>
+        <Route path="/stats" element={<div>stats page</div>}/>
+
+      </Routes>
+    </BrowserRouter>
+      );
 }
 
 export default App;

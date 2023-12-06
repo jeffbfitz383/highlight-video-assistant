@@ -71,6 +71,50 @@
       "quality": "",
       "assist": "",
       "id": 6
+    },
+    {
+      "level": "333333",
+      "game": "",
+      "quarter": "",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 7
+    },
+    {
+      "level": "rrrrrrr",
+      "game": "1",
+      "quarter": "1",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 8
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "jersey": 13,
+      "featured": 4,
+      "assists": 5
+    },
+    {
+      "id": 1,
+      "jersey": 14,
+      "featured": 6,
+      "assists": 7
+    },
+    {
+      "id": 1,
+      "jersey": 15,
+      "featured": 7,
+      "assists": 9
     }
   ]
 }
