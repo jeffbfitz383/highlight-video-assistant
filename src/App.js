@@ -1,5 +1,6 @@
 
 import './App.css';
+import './styles.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,6 +15,8 @@ import Playlist from './Playlist';
 import Playcard from './Playcard';
 import AddPlay from './Addplay';
 import Useplayer from './Useplayer'
+import Home from './Home'
+
 
 
 
@@ -21,9 +24,10 @@ function App() {
 
 
 
-  //from useplays
+  
 const [plays,setPlays] = useState([]) 
 const [players,setPlayers] =useState([])
+const [feature, setFeature] =useState([])
 
     
 useEffect(()=>{
@@ -100,7 +104,7 @@ return (
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<div>Hello world!</div>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
         <Route path="/use" element={<Useplay plays ={plays}/>}/>
         <Route path="/stats" element={<Useplayer players ={players}/>}/>

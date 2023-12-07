@@ -8,11 +8,11 @@ function Playercard({player}){
         
         <div>
         
-        <p>Plyer card works</p>
-        <p>{player.id}</p>
-        <p>{player.jersey}</p>
-        <p>{player.featured}</p>
-        <p>{player.assists}</p>
+        
+        <p>{`Player ID:  ${player.id}`}</p>
+        <p>{`Player Jersey:  ${player.jersey}`}</p>
+        <p>{`Player Fetured: ${player.featured}`}</p>
+        <p>{`Assisting Player: ${player.assists}`}</p><br/>
         
 
         </div>
