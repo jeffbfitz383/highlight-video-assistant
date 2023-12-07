@@ -44,7 +44,7 @@ useEffect(()=>{
     
   },[])
 
-  console.log(players)
+  //console.log(players)
   
   function postPlay(newPlay){
     fetch('http://localhost:3001/plays',{
@@ -61,8 +61,8 @@ useEffect(()=>{
     
     //setPlays([...plays,newPlay])
   }
-  console.log("Hello")
-  console.log(plays)
+  //console.log("Hello")
+  //console.log(plays)
 
   
  ///console.log(plays)

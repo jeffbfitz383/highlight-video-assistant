@@ -1,11 +1,21 @@
 import React, {useState} from "react";
 import Playlist from "./Playlist";
 
-function Playcard({play}){
+function Playcard({play, players}){
   //console.log(play)
+  console.log(players)
   
     function increment(player){
        console.log(player)
+       const jerseyNum=player;
+       console.log(jerseyNum);
+       const filterPlayer = players.filter((playernum)=>{
+        return parseInt(playernum.jersey) === parseInt(player);
+       })
+       console.log(filterPlayer)
+       const currentFeatured = filterPlayer[0].featured;
+       const currentID = filterPlayer[0].id
+       console.log(currentFeatured+1)
     }
     function decrement(){
         //alert("decrement")

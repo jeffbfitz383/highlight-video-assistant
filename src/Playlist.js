@@ -9,7 +9,7 @@ function Playlist({plays, players})
 
     console.log(players)
     const mappedPlays = plays.map((play)=>{
-        return <Playcard key={plays.id} play={play}/>
+        return <Playcard key={plays.id} play={play} players={players}/>
 
     })
 

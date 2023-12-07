@@ -6,8 +6,8 @@ import Playercard from "./Playercard";
 function Playerlist({players})
 
 {
-    console.log("Hey there")
-    console.log(players)
+    //console.log("Hey there")
+    //console.log(players)
 
 
     const mappedPlayers = players.map((player)=>{
