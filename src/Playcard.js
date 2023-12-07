@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Playlist from "./Playlist";
 
-function Playcard({play, players}){
+function Playcard({play, players, incrementFeatured}){
   //console.log(play)
   console.log(players)
   
@@ -15,7 +15,9 @@ function Playcard({play, players}){
        console.log(filterPlayer)
        const currentFeatured = filterPlayer[0].featured;
        const currentID = filterPlayer[0].id
-       console.log(currentFeatured+1)
+       const newFeatured = currentFeatured+1;
+       console.log(newFeatured);
+       incrementFeatured(currentID, newFeatured)
     }
     function decrement(){
         //alert("decrement")

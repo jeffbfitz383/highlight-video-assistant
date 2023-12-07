@@ -61,6 +61,42 @@ useEffect(()=>{
     
     //setPlays([...plays,newPlay])
   }
+
+
+
+  function incrementFeatured(currentId, newFeatured){
+    fetch(`http://localhost:3001/players/${currentId}`,{
+      method:"PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        featured:newFeatured
+      })
+    })
+    
+
+  }
+  
+       
+
+
+
+
+      
+
+
+    
+  
+      
+    
+     
+    
+  
+
+
+
+
   //console.log("Hello")
   //console.log(plays)
 
@@ -106,7 +142,7 @@ return (
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
-        <Route path="/use" element={<Useplay plays ={plays} players={players}/>}/>
+        <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} />}/>
         <Route path="/stats" element={<Useplayer players ={players}/>}/>
 
       </Routes>
@@ -114,4 +150,4 @@ return (
       );
 }
 
-export default App;
+export default App
