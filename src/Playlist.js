@@ -3,17 +3,27 @@ import UsePlay from "./Useplay"
 import Playcard from "./Playcard";
 
 
-function Playlist({plays})
+function Playlist({plays, players})
+
 {
+
+    console.log(players)
     const mappedPlays = plays.map((play)=>{
         return <Playcard key={plays.id} play={play}/>
 
     })
+
+
+   
+    
+  
     
     return (
-        <div>{mappedPlays}
+        <div>
+        <div>{mappedPlays}</div>
         <p>playlists works</p>
         </div>
+        
         
     )
 }

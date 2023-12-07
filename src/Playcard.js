@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import Playlist from "./Playlist";
 
 function Playcard({play}){
-    function increment(){
-       alert("increment")
+  //console.log(play)
+  
+    function increment(player){
+       console.log(player)
     }
     function decrement(){
-        alert("decrement")
+        //alert("decrement")
      }
 
     const [used,setUsed] = useState(false)
@@ -23,11 +25,14 @@ function Playcard({play}){
           Assist: ${assist}`}  {used ? (
             <button onClick={()=>{
                 setUsed(false)
-                increment()
+                increment(player)
+                //console.log(player)
+                
             }}>Used</button>
           ) : (
             <button onClick={()=>{
                 setUsed(true)
+                //console.log(player)
                 decrement()
             }}>Unused</button>
           )}</p>

@@ -106,7 +106,7 @@ return (
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
-        <Route path="/use" element={<Useplay plays ={plays}/>}/>
+        <Route path="/use" element={<Useplay plays ={plays} players={players}/>}/>
         <Route path="/stats" element={<Useplayer players ={players}/>}/>
 
       </Routes>

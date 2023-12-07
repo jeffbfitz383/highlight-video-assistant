@@ -3,9 +3,9 @@ import Playlist from "./Playlist"
 import AddPlay from "./Addplay"
 import './styles.css';
 
-function Useplay({plays}){
-console.log(plays)
-
+function Useplay({plays, players}){
+//console.log(plays)
+//console.log(players)
 
    
 
@@ -13,7 +13,7 @@ console.log(plays)
     return(
         <div>
           
-            <Playlist plays={plays}/>
+            <Playlist plays={plays} players={players}/>
         </div>
 
     )
