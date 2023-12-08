@@ -8,11 +8,20 @@
     border-style: solid;
     border-color: green;
     border-width: 2px;
-    background-color: yellow;
-    height: 100px;
+    background-color: blue;
+    height: 1000px;
 
 } 
 
 #title{
-    background-image:src('./public/coollogo_com-114843326dub.png');
+ font-size: 80px;  
+ text-align:center;
+ padding: 225px;
+ 
+    
 }
+
+body{
+    color:yellow;
+    background-color: blue;
+};

@@ -187,7 +187,7 @@ return (
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
+        <Route path="/add" element={<AddPlay postPlay={postPlay} plays={plays} setPlays={setPlays}/>}/>
         <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} patchAssists ={patchAssists}/>}/>
         <Route path="/stats" element={<Useplayer players ={players} games={games}/>}/>
 

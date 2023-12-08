@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddPlay({postPlay})
+function AddPlay({postPlay, plays, setPlays})
 
 
 
@@ -8,7 +8,8 @@ function AddPlay({postPlay})
     function submit(e){
         e.preventDefault()
         const newPlay ={
-            level: e.target.level.value,
+           level: e.target.level.value,
+           
             game: e.target.game.value,
             quarter: e.target.quarter.value,
             start: e.target.start.value,
@@ -33,7 +34,7 @@ function AddPlay({postPlay})
             <div className="new-play-form">
               <h2>Add a new play</h2>
               <form  onSubmit={(e)=>submit(e)}>
-                <p><input type="text" name="level" placeholder="Level"/> </p>
+                <p><input type="text" name="level" placeholder="Level" /> </p>
                 <p><input type="text" name="game" placeholder="opposing school" /></p>
                 <p><input type="number" name="quarter" placeholder="Quarter" /></p>
                 <p><input type="text" name="start" placeholder="Start time" /></p>
