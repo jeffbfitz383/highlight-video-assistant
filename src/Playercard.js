@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
 
-function Playercard({player, game}){
- console.log(game)
+function Playercard({player, games}){
+ console.log(games)
 
     return(
         
@@ -13,6 +13,11 @@ function Playercard({player, game}){
         <p>{`Player Jersey:  ${player.jersey}`}</p>
         <p>{`Player Fetured: ${player.featured}`}</p>
         <p>{`Assisting Player: ${player.assists}`}</p><br/>
+
+
+        <p>{`${games.id}`}</p>
+        <p>{`${games.school}`}</p>
+        <p>{`${games.timesused}`}</p>
         
 
         </div>

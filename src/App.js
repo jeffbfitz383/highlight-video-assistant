@@ -16,6 +16,7 @@ import Playcard from './Playcard';
 import AddPlay from './Addplay';
 import Useplayer from './Useplayer'
 import Home from './Home'
+import Gamelist from './Gameslist'
 
 
 
@@ -186,10 +187,12 @@ return (
     <BrowserRouter>
       <NavBar/>
       <Routes>
+        
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay} plays={plays} setPlays={setPlays}/>}/>
         <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} patchAssists ={patchAssists}/>}/>
         <Route path="/stats" element={<Useplayer players ={players} games={games}/>}/>
+        <Route path="/games" element={<Gamelist games={games}/>}/>
 
       </Routes>
     </BrowserRouter>

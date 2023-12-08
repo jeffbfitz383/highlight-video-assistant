@@ -12,19 +12,22 @@ function Playerlist({players, games})
 
 
     const mappedPlayers = players.map((player)=>{
-        return <Playercard key={players.id} player={player}/>
+        return <Playercard key={players.id} player={player} games= {games}/>
 
     })
+  // console.log(games)
+   // const mappedGames = games.map((game)=>{
+     //   return <Playercard key={game.id} game={game}/>
 
-    const mappedGames = games.map((game)=>{
-        return <Playercard key={games.id} game={game}/>
 
-    })
+   // })
     
     
     return (
         <div>
-       <div>{mappedPlayers}</div>
+       
+        <div>{mappedPlayers}S</div>
+       
        
        </div>
     )
