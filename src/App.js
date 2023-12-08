@@ -74,9 +74,20 @@ useEffect(()=>{
         featured:newFeatured
       })
     })
-    
-
+    .then(r=>r.json())
+    .then(data=>{
+      const newPlayer = players.map((player)=>{
+        if(player.id===currentId){
+          return data
+        }
+        return player
+      })
+      setPlayers(newPlayer)
+    })
   }
+
+
+  
   
        
 

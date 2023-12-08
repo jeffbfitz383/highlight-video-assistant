@@ -45,7 +45,8 @@ function Playcard({play, players, incrementFeatured}){
             <button onClick={()=>{
                 setUsed(true)
                 //console.log(player)
-                decrement()
+                //decrement()
+                increment(player)
             }}>Unused</button>
           )}</p>
         </div>
