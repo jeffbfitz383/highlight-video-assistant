@@ -93,6 +93,18 @@
       "quality": "",
       "assist": "",
       "id": 8
+    },
+    {
+      "level": "Varsity",
+      "game": "Horizon",
+      "quarter": "3",
+      "start": "10:00",
+      "stop": "9:50",
+      "player": "14",
+      "playtype": "layup",
+      "quality": "8",
+      "assist": "13",
+      "id": 9
     }
   ],
   "players": [
@@ -100,12 +112,12 @@
       "id": 1,
       "jersey": 13,
       "featured": 4,
-      "assists": 7
+      "assists": 21
     },
     {
       "id": 2,
       "jersey": 14,
-      "featured": 25,
+      "featured": 36,
       "assists": 7
     },
     {

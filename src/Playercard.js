@@ -15,9 +15,7 @@ function Playercard({player, games}){
         <p>{`Assisting Player: ${player.assists}`}</p><br/>
 
 
-        <p>{`${games.id}`}</p>
-        <p>{`${games.school}`}</p>
-        <p>{`${games.timesused}`}</p>
+  
         
 
         </div>

@@ -190,7 +190,7 @@ return (
         
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay} plays={plays} setPlays={setPlays}/>}/>
-        <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} patchAssists ={patchAssists}/>}/>
+        <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} patchAssists ={patchAssists} games={games}/>}/>
         <Route path="/stats" element={<Useplayer players ={players} games={games}/>}/>
         <Route path="/games" element={<Gamelist games={games}/>}/>
 

@@ -1,15 +1,34 @@
 import React, {useState} from "react";
 import Playlist from "./Playlist";
 
-function Playcard({play, players, incrementFeatured, patchAssists}){
+function Playcard({play, players, incrementFeatured, patchAssists, games}){
   //console.log(play)
   //console.log(players)
   
+ /*
+    function incrementGames(game){ 
+      console.log(game)
+      const filterGame = games.filter((gamenum)=>{
+        return parseInt(gamenum.game) ===(game)
+      })
+      console.log(filterGame)
 
+      const currentGames = filterGame[0].timesused
+      const gamesId= filterGame[0].id
+      const upGame = currentGames+1
+      console.log(currentGames)
+      console.log(gamesId)
+      console.log(upGame)
+    }
+*/
     function incrementAssists(assist){
           console.log(assist)
           const filterAssist = players.filter((assistnumb)=>{
-            return parseInt(assistnumb.jersey) === parseInt(assist);
+          return parseInt(assistnumb.jersey) === parseInt(assist);
+
+           const currentAssist = filterAssist[0].game;
+           const nextID = filterAssist[0].id
+           const  newAssist = currentAssist +1;
             
            })
            console.log(filterAssist)
@@ -69,6 +88,7 @@ function Playcard({play, players, incrementFeatured, patchAssists}){
                 //decrement()
                 increment(player)
                 incrementAssists(assist)
+               // incrementGames(game)
             }}>Unused</button>
           )}</p>
         </div>
