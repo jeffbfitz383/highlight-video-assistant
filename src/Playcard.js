@@ -3,12 +3,23 @@ import Playlist from "./Playlist";
 
 function Playcard({play, players, incrementFeatured}){
   //console.log(play)
-  console.log(players)
+  //console.log(players)
   
+
+    function incrementAssists(assist){
+          console.log(assist)
+          const filterAssist = players.filter((assistnumb)=>{
+            return parseInt(assistnumb.jersey) === parseInt(assist);
+            
+           })
+           console.log(filterAssist)
+    }
+    
+
     function increment(player){
-       console.log(player)
+       //console.log(player)
        const jerseyNum=player;
-       console.log(jerseyNum);
+       //console.log(jerseyNum);
        const filterPlayer = players.filter((playernum)=>{
         return parseInt(playernum.jersey) === parseInt(player);
        })
@@ -16,7 +27,7 @@ function Playcard({play, players, incrementFeatured}){
        const currentFeatured = filterPlayer[0].featured;
        const currentID = filterPlayer[0].id
        const newFeatured = currentFeatured+1;
-       console.log(newFeatured);
+       //console.log(newFeatured);
        incrementFeatured(currentID, newFeatured)
     }
     function decrement(){
@@ -37,7 +48,7 @@ function Playcard({play, players, incrementFeatured}){
           Assist: ${assist}`}  {used ? (
             <button onClick={()=>{
                 setUsed(false)
-                increment(player)
+                //increment(player)
                 //console.log(player)
                 
             }}>Used</button>
@@ -47,6 +58,7 @@ function Playcard({play, players, incrementFeatured}){
                 //console.log(player)
                 //decrement()
                 increment(player)
+                incrementAssists(assist)
             }}>Unused</button>
           )}</p>
         </div>

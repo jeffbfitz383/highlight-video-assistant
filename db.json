@@ -10,7 +10,7 @@
       "player": 14,
       "playtype": "layup",
       "quality": "7.5",
-      "assist": 12
+      "assist": 13
     },
     {
       "id": 2,
@@ -83,7 +83,7 @@
     {
       "id": 2,
       "jersey": 14,
-      "featured": 10,
+      "featured": 20,
       "assists": 7
     },
     {
@@ -91,6 +91,18 @@
       "jersey": 15,
       "featured": 7,
       "assists": 9
+    },
+    {
+      "id": 4,
+      "jersey": 8,
+      "featured": 0,
+      "assists": 0
+    },
+    {
+      "id": 5,
+      "jersey": 20,
+      "featured": 0,
+      "assists": 0
     }
   ],
   "games": [

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
 
-function Playercard({player}){
- 
+function Playercard({player, game}){
+ console.log(game)
 
     return(
         

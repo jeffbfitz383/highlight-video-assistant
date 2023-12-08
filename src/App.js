@@ -28,6 +28,7 @@ function App() {
 const [plays,setPlays] = useState([]) 
 const [players,setPlayers] =useState([])
 const [feature, setFeature] =useState([])
+const [games, setGames] = useState([])
 
     
 useEffect(()=>{
@@ -41,6 +42,14 @@ useEffect(()=>{
     fetch('http://localhost:3001/players')
     .then(r=>r.json())
     .then(data=>setPlayers(data))
+    
+  },[])
+
+  useEffect(()=>{
+    fetch('http://localhost:3001/games')
+    .then(r=>r.json())
+    .then(data=>setGames(data))
+    //console.log(games)
     
   },[])
 
@@ -154,7 +163,7 @@ return (
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
         <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} />}/>
-        <Route path="/stats" element={<Useplayer players ={players}/>}/>
+        <Route path="/stats" element={<Useplayer players ={players} games={games}/>}/>
 
       </Routes>
     </BrowserRouter>

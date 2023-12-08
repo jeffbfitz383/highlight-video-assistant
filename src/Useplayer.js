@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react'
 import Playerlist from "./Playerlist"
 
-function Useplayer({players}){
+function Useplayer({players, games}){
 
-console.log(players)
+//console.log(players)
+//console.log(games)
 
 
    
@@ -12,7 +13,7 @@ console.log(players)
     return(
         <div>
           
-          <Playerlist players={players}/>
+          <Playerlist players={players} games={games}/>
         </div>
 
     )
