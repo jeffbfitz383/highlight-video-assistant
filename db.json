@@ -1,0 +1,171 @@
+{
+  "plays": [
+    {
+      "id": 1,
+      "level": "varsity",
+      "game": "Monarch",
+      "quarter": 1,
+      "start": "8:40",
+      "stop": "8:33",
+      "player": 14,
+      "playtype": "layup",
+      "quality": "7.5",
+      "assist": 13
+    },
+    {
+      "id": 2,
+      "level": "JV",
+      "game": "Legacy",
+      "quarter": 3,
+      "start": "11:23",
+      "stop": "11:11",
+      "player": 5,
+      "playtype": "put back",
+      "quality": "6.8",
+      "assist": 11
+    },
+    {
+      "id": 3,
+      "level": "C team",
+      "game": "Horizon",
+      "quarter": 4,
+      "start": "5:05",
+      "stop": "5:00",
+      "player": 3,
+      "playtype": "TP",
+      "quality": "9.0",
+      "assist": 12
+    },
+    {
+      "level": "C team",
+      "game": "Horizon",
+      "quarter": "13",
+      "start": "10:10",
+      "stop": "9:00",
+      "player": "14",
+      "playtype": "free throw",
+      "quality": "6",
+      "assist": "",
+      "id": 4
+    },
+    {
+      "level": "varsity",
+      "game": "",
+      "quarter": "",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 5
+    },
+    {
+      "level": "varsity",
+      "game": "Mon",
+      "quarter": "2",
+      "start": "8:00",
+      "stop": "7:50",
+      "player": "14",
+      "playtype": "layup",
+      "quality": "8.0",
+      "assist": "13",
+      "id": 6
+    },
+    {
+      "game": "",
+      "quarter": "",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 7
+    },
+    {
+      "game": "",
+      "quarter": "",
+      "start": "",
+      "stop": "",
+      "player": "",
+      "playtype": "",
+      "quality": "",
+      "assist": "",
+      "id": 8
+    },
+    {
+      "level": "Varsity",
+      "game": "Horizon",
+      "quarter": "3",
+      "start": "10:00",
+      "stop": "9:50",
+      "player": "14",
+      "playtype": "layup",
+      "quality": "8",
+      "assist": "13",
+      "id": 9
+    },
+    {
+      "level": "varisty",
+      "game": "Horizon",
+      "quarter": "2",
+      "start": "10:00",
+      "stop": "9:50",
+      "player": "8",
+      "playtype": "three pointer",
+      "quality": "10",
+      "assist": "20",
+      "id": 10
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "jersey": 13,
+      "featured": 4,
+      "assists": 21
+    },
+    {
+      "id": 2,
+      "jersey": 14,
+      "featured": 36,
+      "assists": 7
+    },
+    {
+      "id": 3,
+      "jersey": 15,
+      "featured": 7,
+      "assists": 9
+    },
+    {
+      "id": 4,
+      "jersey": 8,
+      "featured": 1,
+      "assists": 0
+    },
+    {
+      "id": 5,
+      "jersey": 20,
+      "featured": 0,
+      "assists": 1
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "school": "Monarch",
+      "timesused": 2
+    },
+    {
+      "id": 2,
+      "school": "Legacy",
+      "timesused": 4
+    },
+    {
+      "id": 3,
+      "school": "Horizon",
+      "timesused": 8
+    }
+  ]
+}
