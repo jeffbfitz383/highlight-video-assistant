@@ -1,0 +1,27 @@
+.navbar{
+    background-color: yellow;
+    color: yellow;
+
+}
+
+ .box{
+    border-style: solid;
+    border-color: green;
+    border-width: 2px;
+    background-color: blue;
+    height: 1000px;
+
+} 
+
+#title{
+ font-size: 80px;  
+ text-align:center;
+ padding: 225px;
+ 
+    
+}
+
+body{
+    color:yellow;
+    background-color: blue;
+};

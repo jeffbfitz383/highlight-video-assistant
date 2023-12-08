@@ -105,18 +105,6 @@
       "quality": "8",
       "assist": "13",
       "id": 9
-    },
-    {
-      "level": "varisty",
-      "game": "Horizon",
-      "quarter": "2",
-      "start": "10:00",
-      "stop": "9:50",
-      "player": "8",
-      "playtype": "three pointer",
-      "quality": "10",
-      "assist": "20",
-      "id": 10
     }
   ],
   "players": [
@@ -141,14 +129,14 @@
     {
       "id": 4,
       "jersey": 8,
-      "featured": 1,
+      "featured": 0,
       "assists": 0
     },
     {
       "id": 5,
       "jersey": 20,
       "featured": 0,
-      "assists": 1
+      "assists": 0
     }
   ],
   "games": [
