@@ -3,13 +3,13 @@ import UsePlay from "./Useplay"
 import Playcard from "./Playcard";
 
 
-function Playlist({plays, players, incrementFeatured})
+function Playlist({plays, players, incrementFeatured, patchAssists})
 
 {
 
     console.log(players)
     const mappedPlays = plays.map((play)=>{
-        return <Playcard key={plays.id} play={play} players={players} incrementFeatured={incrementFeatured}/>
+        return <Playcard key={plays.id} play={play} players={players} incrementFeatured={incrementFeatured} patchAssists={patchAssists}/>
 
     })
 

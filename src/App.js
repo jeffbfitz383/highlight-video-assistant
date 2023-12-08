@@ -95,6 +95,32 @@ useEffect(()=>{
     })
   }
 
+  function patchAssists(nextID, newAssist){
+    fetch(`http://localhost:3001/players/${nextID}`,{
+      method:"PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        assists:newAssist
+      })
+    })
+    .then(r=>r.json())
+    .then(data=>{
+      const updatedAssist = players.map((player)=>{
+        if(player.id===nextID){
+          return data
+        }
+        return player
+      })
+      setPlayers(updatedAssist)
+    })
+  }
+
+
+
+  
+
 
   
   
@@ -162,7 +188,7 @@ return (
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<AddPlay postPlay={postPlay}/>}/>
-        <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} />}/>
+        <Route path="/use" element={<Useplay plays ={plays} players={players} incrementFeatured={incrementFeatured} patchAssists ={patchAssists}/>}/>
         <Route path="/stats" element={<Useplayer players ={players} games={games}/>}/>
 
       </Routes>

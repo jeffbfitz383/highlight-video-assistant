@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Playlist from "./Playlist";
 
-function Playcard({play, players, incrementFeatured}){
+function Playcard({play, players, incrementFeatured, patchAssists}){
   //console.log(play)
   //console.log(players)
   
@@ -13,6 +13,16 @@ function Playcard({play, players, incrementFeatured}){
             
            })
            console.log(filterAssist)
+           const currentAssist = filterAssist[0].assists;
+           const nextID = filterAssist[0].id
+           const  newAssist = currentAssist +1;
+           //console.log(currentAssist)
+           //console.log(nextID)
+           //console.log(newAssist)
+           //incrementFeatured(currentID, newFeatured)
+           patchAssists(nextID, newAssist)
+
+
     }
     
 
